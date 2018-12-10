@@ -13,8 +13,23 @@ To do the translation, you just have to add the class name "traducir" to each el
 You can also translate FORM elements:
 ```
 <select>
-  <option value="" class="traducir">Select an option</option>
-  <option value="1" class="traducir">Search by name</option>
-  <option value="2" class="traducir">Search by Age</option>
+  <option value="" class="traducir">Select</option>
+  <option value="" class="traducir">Option 1</option>
+  <option value="" class="traducir">Option 2</option>
+  <option value="" class="traducir">Something else...</option>
 </select>
+```
+
+You can also translate PLACEHOLDERS:
+```
+<input type="text" placeholder="Write your name here..." class="traducir-placeholder" />
+```
+IMPORTANT: YOU WILL NEED jQuery TO GET TRANSLATIONS:
+```
+<script  src="https://code.jquery.com/jquery-3.3.1.min.js"  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="  crossorigin="anonymous"></script>
+```
+
+Next, add this utility:
+```
+    <script src="api/traductor.js"></script>
 ```
