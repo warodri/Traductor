@@ -27,7 +27,7 @@ You can also translate PLACEHOLDERS by adding the class "traducir-placeholder":
 ```
 <input type="text" placeholder="Write your name here..." class="traducir-placeholder" />
 ```
-IMPORTANT: YOU WILL NEED jQuery TO GET TRANSLATIONS:
+IMPORTANT: YOU WILL NEED jQuery TO GET THE TRANSLATIONS:
 ```
 <script  src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 ```
