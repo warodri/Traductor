@@ -20,16 +20,45 @@ You can also translate FORM elements:
 </select>
 ```
 
-You can also translate PLACEHOLDERS:
+You can also translate PLACEHOLDERS by addin the class "traducir-placeholder":
 ```
 <input type="text" placeholder="Write your name here..." class="traducir-placeholder" />
 ```
 IMPORTANT: YOU WILL NEED jQuery TO GET TRANSLATIONS:
 ```
-<script  src="https://code.jquery.com/jquery-3.3.1.min.js"  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="  crossorigin="anonymous"></script>
+<script  src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 ```
 
 Next, add this utility:
 ```
-    <script src="api/traductor.js"></script>
+<script src="api/traductor.js"></script>
 ```
+
+On, once this script is loaded, add the translations:
+```
+<script>
+  let vt = new Traductor();
+  let word;
+  
+  // Add wharever you have written:
+  word = vt.addWord('en', 'Simple Javascript Translator');
+  // Then add the translation
+  word.addLang('sp', 'Simple Traductor en Javascript');
+  // You may also want to add other languages
+  word.addLang('it', 'Traduttore Javascript semplice');
+  
+  // Placeholder translations need no change. It's all the same
+  word = vt.addWord('en', 'Write your name here...'); 
+  word.addLang('sp', 'Escribe tu nombre aquí...');
+  
+</script>
+```
+
+Once you are ready to do the translation, run this:
+```
+function doTranslation() {
+    vt.translateTo('sp').translate();
+}
+```
+
+
