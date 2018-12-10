@@ -9,11 +9,11 @@ To do the translation, you just have to add the class name "traducir" to each el
 
 <p class="myclass myOtherClass traducir">A Paragraph</p>
 
-You can also translate <select...>
-
+You can also translate FORM elements:
+```
 <select>
   <option value="" class="traducir">Select an option</option>
   <option value="1" class="traducir">Search by name</option>
   <option value="2" class="traducir">Search by Age</option>
 </select>
-
+```
