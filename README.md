@@ -6,8 +6,9 @@ With this utility you don't have to use labels when you write a string, you just
 It can also translate placeholders. For example: <input type="text" placeholder="This is a hint..." />
 
 To do the translation, you just have to add the class name "traducir" to each element you want to translate:
-
+```
 <p class="myclass myOtherClass traducir">A Paragraph</p>
+```
 
 You can also translate FORM elements:
 ```
