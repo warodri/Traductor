@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title class="traducir">Simple Javascript Translator</title>
+    </head>
+    <body>
+        <h2 class="traducir">
+            Simple Javascript Translator
+        </h2>
+        <p class="traducir">
+            You will need jQuery to use this utility.
+        </p>
+        <p class="traducir">
+            Translate paragraphs.
+        </p>
+        <p class="traducir">
+            Translate Form components:
+        </p>
+        <select>
+            <option value="" class="traducir">Select</option>
+            <option value="" class="traducir">Option 1</option>
+            <option value="" class="traducir">Option 2</option>
+            <option value="" class="traducir">Something else...</option>
+        </select>
+        <p class="traducir">
+            Translate Placeholders
+        </p>
+        <input type="text" placeholder="Write your name here..." class="traducir-placeholder" />
+        
+        <hr>
+        <button class="traducir" onClick="javascript:doTranslation()">
+            Translate Now to Spanish!
+        </button>
+        
+    </body>
+    
+    <script  src="https://code.jquery.com/jquery-3.3.1.min.js"  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="  crossorigin="anonymous"></script>
+    <script src="https://www.vaskit.com/2019dev/api/traductor.js"></script>
+    <script>
+        let vt = new Traductor();
+        let word;
+        
+        word = vt.addWord('en', 'Simple Javascript Translator');
+        word.addLang('sp', 'Simple Traductor en Javascript');
+        
+        word = vt.addWord('en', 'You will need jQuery to use this utility.');
+        word.addLang('sp', 'Necesitarás jQuery para usar esta utilidad.');
+        
+        word = vt.addWord('en', 'Translate paragraphs.');
+        word.addLang('sp', 'Traduce párrafos.');
+        
+        word = vt.addWord('en', 'Translate Form components:');
+        word.addLang('sp', 'Traduce componentes de Formularios:');
+        
+        word = vt.addWord('en', 'Select');
+        word.addLang('sp', 'Seleccione');
+        
+        word = vt.addWord('en', 'Option 1'); word.addLang('sp', 'Opción 1');
+        word = vt.addWord('en', 'Option 2'); word.addLang('sp', 'Opción 2');
+        word = vt.addWord('en', 'Something else...'); word.addLang('sp', 'Más opciones...');
+        word = vt.addWord('en', 'Translate Placeholders'); word.addLang('sp', 'Traducir textos de ayuda');
+        word = vt.addWord('en', 'Write your name here...'); word.addLang('sp', 'Escribe tu nombre aquí...');
+        word = vt.addWord('en', 'Translate Now to Spanish!'); word.addLang('sp', 'Traducir Ahora al Español!');
+        
+        function doTranslation() {
+            vt.translateTo('sp').translate();
+        }
+        
+    </script>
+    
+</html>
+
