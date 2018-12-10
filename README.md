@@ -23,7 +23,7 @@ You can also translate FORM elements:
 </select>
 ```
 
-You can also translate PLACEHOLDERS by addin the class "traducir-placeholder":
+You can also translate PLACEHOLDERS by adding the class "traducir-placeholder":
 ```
 <input type="text" placeholder="Write your name here..." class="traducir-placeholder" />
 ```
