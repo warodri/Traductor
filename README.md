@@ -37,7 +37,7 @@ Next, add this utility:
 <script src="api/traductor.js"></script>
 ```
 
-On, once this script is loaded, add the translations:
+Ok, once this script is loaded, add the translations:
 ```
 <script>
   let vt = new Traductor();
